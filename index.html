@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        
+
+            <!-- New Section containing the required tags -->
+            <section class="dashboard-form" style="margin-bottom: 30px; padding: 20px; background: #fff; border-radius: 10px;">
+                <h2>Quick Action Form</h2>
+                <form action="#" method="POST" style="display: grid; gap: 15px; max-width: 500px;">
+                    
+                    <!-- <select> Tag -->
+                    <div>
+                        <label for="project-category">Project Category:</label>
+                        <select id="project-category" name="category">
+                            <option value="web">Web Development</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                    </div>
+
+                    <!-- Input Type 1: text -->
+                    <div>
+                        <label for="task-name">Task Name:</label>
+                        <input type="text" id="task-name" name="task-name" placeholder="Enter task title">
+                    </div>
+
+                    <!-- Input Type 2: date -->
+                    <div>
+                        <label for="due-date">Due Date:</label>
+                        <input type="date" id="due-date" name="due-date">
+                    </div>
+
+                    <!-- Input Type 3: checkbox -->
+                    <div>
+                        <input type="checkbox" id="high-priority" name="priority" value="high">
+                        <label for="high-priority">Mark as High Priority</label>
+                    </div>
+
+                    <!-- Input Type 4: color -->
+                    <div>
+                        <label for="label-color">Label Color:</label>
+                        <input type="color" id="label-color" name="label-color" value="#4e73df">
+                    </div>
+
+                    <!-- Input Type 5: submit -->
+                    <div>
+                        <input type="submit" value="Save Task">
+                    </div>
+                </form>
+            </section>
+            
+        </main>
+    </div>
+</body>
+</html>
